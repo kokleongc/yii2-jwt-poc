@@ -2,6 +2,7 @@
 
 $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
+$jwt = require __DIR__ . '/jwt.php';
 
 $config = [
     'id' => 'basic',
@@ -42,14 +43,13 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+        'jwt' => $jwt,
     ],
     'params' => $params,
 ];
